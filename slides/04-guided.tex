@@ -1,0 +1,148 @@
+\input{slheader}
+\title{Guided Exercises}
+\begin{document}
+\frame{\maketitle}
+
+\begin{frame}
+\frametitle{Goals for this hour}
+
+\begin{itemize}
+\item A quiz
+\item Do a few exercises.
+\item Play around.
+\item You can work alone, in pairs, in triples,\ldots
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What Happens Here?}
+\begin{python}
+x = 2
+v = x*x
+v = x + 1
+if x > 2:
+    print x
+else:
+    print v
+\end{python}
+
+\begin{enumerate}
+\item Prints \alert{2}
+\item Prints \alert{3}
+\item Prints \alert{4}
+\item Something else
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What Happens Here?}
+\begin{python}
+x = 2
+for i in range(4):
+    x = x + 1
+print x
+\end{python}
+
+\begin{enumerate}
+\item Prints \alert{4}
+\item Prints \alert{6}
+\item Prints \alert{3}, \alert{4}, \alert{5}, \alert{6}
+\item Prints \alert{3}, \alert{4}, \alert{5}
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{What Happens Here?}
+
+\begin{python}
+x = 10
+
+if x > 5:
+    print 'greater than 5'
+elif x > 3:
+    print 'greater than 3'
+else:
+    print 'not that big, really'
+\end{python}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Lists I}
+
+How do you access the first element of a list?
+
+Assume \texttt{list} is a list:
+
+\begin{enumerate}
+\item \texttt{list[1]}
+\item \texttt{list[0]}
+\item \texttt{list[-1]}
+\item \texttt{list(0)}
+\item \texttt{list(-1)}
+\item \texttt{list(1)}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lists II}
+
+How do you access the last element of a list?
+
+Assume \texttt{list} is a list:
+
+\begin{enumerate}
+\item \texttt{list[1]}
+\item \texttt{list(-0)}
+\item \texttt{list[-1]}
+\item \texttt{list(-1)}
+\item \texttt{list(1)}
+\item \texttt{list[-0]}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+{}
+
+\bigskip
+\bigskip
+\bigskip
+Exercises
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Object Identity}
+
+What is the difference between the following two code examples:
+
+A)
+\begin{python}
+A = [1, 2, 3]
+B = [1, 2, 3]
+\end{python}
+
+B)
+
+\begin{python}
+A = [1, 2, 3]
+B = A
+\end{python}
+
+Write a small piece of code (should be 2 or 3 lines) that behaves differently
+if you insert it after each of the two segments above.
+
+\pause
+
+\begin{python}
+B[0] = 0
+print A
+\end{python}
+
+\end{frame}
+
+\end{document}

@@ -185,173 +185,37 @@ else:
 \end{python}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Lists}
-
-\begin{python}
-
-students = ['Luis','Mark','Rita']
-
-print students[0]
-print students[1]
-print students[2]
-\end{python}
-
-\end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Loops}
+\frametitle{Example}
 
 \begin{python}
-students = ['Luis','Mark','Rita',...]
+x = 2.03
+v = -2.523 + 0.22 * x  + .51 * x**2
 
-for st in students:
-    print st
+if v > 0:
+    print 'positive'
+else:
+    print 'negative'
 \end{python}
+
 \end{frame}
 
 \begin{frame}[fragile]
 \frametitle{Example}
 
 \begin{python}
-values = [0.11, -0.23, -0.16, 0.18, 0.23, 0.19]
+x = 2.03
+v = -2.523 + 0.22 * x  + .51 * x**2
 
-sum = 0.0
-sum2 = 0.0
-for v in values:
-    sum = sum + v
-    sum2 = sum2 + v * v
-
-mu = sum/len(values)
-mu2 = sum2/len(values)
-print 'Average: {0}'.format(mu)
-print 'Std Dev: {0}'.format(mu2 - mu*mu)
-\end{python}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Example}
-
-\begin{python}
-values = [0.11, -0.23, -0.16, 0.18, 0.23, 0.19]
-
-sum = 0.0
-sum2 = 0.0
-for v in values:
-    sum += v
-    sum2 += v * v
-
-mu = sum/len(values)
-mu2 = sum2/len(values)
-print 'Average: {0}'.format(mu)
-print 'Std Dev: {0}'.format(mu2 - mu*mu)
-\end{python}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Example}
-
-\begin{python}
-values = [0.11, -0.23, -0.16, 0.18, 0.23, 0.19]
-
-mu = 0.0
-mu2 = 0.0
-for v in values:
-    mu += v
-    mu2 += v * v
-
-mu /= len(values)
-mu2 /= len(values)
-print 'Average: {0}'.format(mu)
-print 'Std Dev: {0}'.format(mu2 - mu*mu)
-\end{python}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Example}
-
-\begin{python}
-values = [0.11, -0.23, -0.16, 0.18, 0.23, 0.19]
-
-mu = 0.0
-mu2 = 0.0
-for v in values:
-    mu += v
-    mu2 += v * v
-
-mu /= len(values)
-mu2 /= len(values)
-print 'Average: {0}'.format(mu)
-print 'Std Dev: {0}'.format(mu2 - mu*mu)
-\end{python}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Exercise}
-
-Adapt the code to ignore negative numbers.
-
-\pause
-
-\begin{python}
-values = [0.11, -0.23, -0.16, 0.18, 0.23, 0.19]
-
-mu = 0.0
-mu2 = 0.0
-n = 0.0
-for v in values:
-    if v >= 0.0:
-        mu += v
-        mu2 += v * v
-        n += 1
-
-mu /= n
-mu2 /= n
-print 'Average: {0}'.format(mu)
-print 'Std Dev: {0}'.format(mu2 - mu*mu)
-\end{python}
-\note{
-    Negative? strictly negative or just negative.
-}
-
-\end{frame}
-
-
-\begin{frame}[fragile]
-\frametitle{Loops (II)}
-
-\begin{block}{Greatest Common Divisor (Euclid's Method)}
-\[
-gcd(a,b) = \begin{cases}
-            a & \text{if $b = a$}\\
-            gcd(a-b, b) & \text{if $a > b$} \\
-            gcd(a, b-a) & \text{o.w.}
-            \end{cases}
-\]
-\end{block}
-
-\pause
-\begin{python}
-a = 9344
-b = 6497
-
-while a != b:
-    if a > b:
-        a,b = a-b,b
-    else:
-        a,b = a,b-a
-print a
+if v > 0:
+    print 'positive'
+elif v == 0:
+    print 'zero'
+else:
+    print 'negative'
 \end{python}
 
-\end{frame}
-
-\begin{frame}
-\frametitle{For Monday}
-
-\begin{itemize}
-\item Install Python(x,y)\\
-    (or the equivalent on your platform)
-\end{itemize}
 \end{frame}
 
 \end{document}
