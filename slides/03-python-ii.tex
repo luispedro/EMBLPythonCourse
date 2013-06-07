@@ -43,8 +43,8 @@ for v in values:
 
 mu = sum/len(values)
 mu2 = sum2/len(values)
-print 'Average:',(mu)
-print 'Std Dev:',(mu2 - mu*mu)
+print 'Average:', mu
+print 'Std Dev:', mu2 - mu*mu
 \end{python}
 \end{frame}
 
@@ -140,6 +140,20 @@ print 'Std Dev: ',(mu2 - mu*mu)
 \begin{python}
 while <condition>:
     block
+\end{python}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Example of Using While}
+
+\begin{python}
+number = 232420982059820
+log2 = 0
+while number > 0:
+    log2 += 1
+    number = int(number/2)
+print 'Log 2 is', log2
 \end{python}
 
 \end{frame}
