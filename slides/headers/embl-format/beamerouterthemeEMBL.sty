@@ -35,11 +35,10 @@
 {%
  \vspace{-.2ex}%
   \vbox{\begin{beamercolorbox}[ht=2em,wd=\paperwidth]{frametitle}%
-    \hfill%
+    \usebeamerfont{frametitle}%
+    \insertframetitle\hfill%
+    \par
   \end{beamercolorbox}}%
-  \usebeamerfont{frametitle}%
-  \vspace{-1.3em}\raisebox{1.4em}{\insertframetitle}\hfill%
-  \vspace{-1.4em}%
 }
 
 \defbeamertemplate*{title page}{EMBL}[1][]
