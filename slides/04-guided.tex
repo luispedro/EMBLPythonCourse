@@ -70,6 +70,63 @@ else:
 
 \end{frame}
 
+\begin{frame}[fragile]
+\frametitle{How Many Above 35?}
+
+\begin{python}
+ages = [10, 54, 23, 90, 23, 35]
+\end{python}
+
+How many are above 35?
+
+\pause
+
+\begin{python}
+above35 = 0
+for v in ages:
+    if v > 35:
+        above35 += 1
+print above35
+\end{python}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{What does this print?}
+
+\begin{python}
+ages = [10, 54, 23, 90, 23, 35]
+vi = 0
+while ages[vi] <= 35:
+    vi += 1
+print vi
+\end{python}
+
+Prints
+
+\begin{enumerate}
+\item 0
+\item 1
+\item 2
+\item 54
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{What happens here?}
+
+\begin{python}
+ages = [10, 54, 23, 90, 23, 35]
+vi = 0
+while ages[vi] <= 100:
+    vi += 1
+print vi
+\end{python}
+
+\end{frame}
 
 
 \begin{frame}
