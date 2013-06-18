@@ -5,6 +5,44 @@
 \frame{\maketitle}
 
 \begin{frame}[fragile]
+\frametitle{Indentation}
+\begin{itemize}
+\item Four spaces.
+\item Python does not care, but we do.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Strings}
+
+\begin{itemize}
+\item Start (and end) with single or double quotes
+\end{itemize}
+
+\begin{python}
+
+name = 'Holger'
+greeting = "Hello " + name
+print greeting
+\end{python}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Errors}
+
+\begin{python}
+x = 1
+if x > 0
+    print 'positive'
+if y < 0:
+    print 'y is negative'
+\end{python}
+
+\end{frame}
+
+\begin{frame}[fragile]
 \frametitle{Lists}
 
 \begin{python}
@@ -22,7 +60,7 @@ print students[2]
 \frametitle{Loops}
 
 \begin{python}
-students = ['Luis','Mark','Rita',...]
+students = ['Luis','Mark','Rita']
 
 for st in students:
     print st
@@ -44,7 +82,7 @@ for v in values:
 mu = sum/len(values)
 mu2 = sum2/len(values)
 print 'Average:', mu
-print 'Std Dev:', mu2 - mu*mu
+print 'Variance:', mu2 - mu*mu
 \end{python}
 \end{frame}
 
@@ -62,8 +100,8 @@ for v in values:
 
 mu = sum/len(values)
 mu2 = sum2/len(values)
-print 'Average:',(mu)
-print 'Std Dev:', (mu2 - mu*mu)
+print 'Average:', mu
+print 'Variance:', (mu2 - mu*mu)
 \end{python}
 \end{frame}
 
@@ -82,7 +120,7 @@ for v in values:
 mu /= len(values)
 mu2 /= len(values)
 print 'Average: ', mu
-print 'Std Dev:', (mu2 - mu*mu)
+print 'Variance:', (mu2 - mu*mu)
 \end{python}
 \end{frame}
 
@@ -101,7 +139,7 @@ for v in values:
 mu /= len(values)
 mu2 /= len(values)
 print 'Average: ', mu
-print 'Std Dev:', (mu2 - mu*mu)
+print 'Variance:', (mu2 - mu*mu)
 \end{python}
 \end{frame}
 
@@ -127,7 +165,7 @@ for v in values:
 mu /= n
 mu2 /= n
 print 'Average: ',(mu)
-print 'Std Dev: ',(mu2 - mu*mu)
+print 'Variance: ',(mu2 - mu*mu)
 \end{python}
 \note{
     Negative? strictly negative or just negative.
@@ -152,7 +190,7 @@ number = 232420982059820
 log2 = 0
 while number > 0:
     log2 += 1
-    number = int(number/2)
+    number = number//2
 print 'Log 2 is', log2
 \end{python}
 

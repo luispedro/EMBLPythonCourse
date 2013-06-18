@@ -114,6 +114,19 @@ Prints
 
 \end{frame}
 
+\begin{frame}[fragile]
+\frametitle{What does this print?}
+
+\begin{python}
+ages = [10, 54, 23, 90, 23, 35]
+vi = len(ages) - 1
+while vi >= 0:
+    print ages[vi]
+    vi -= 1
+\end{python}
+
+\end{frame}
+
 
 \begin{frame}[fragile]
 \frametitle{What happens here?}
@@ -124,80 +137,6 @@ vi = 0
 while ages[vi] <= 100:
     vi += 1
 print vi
-\end{python}
-
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Lists I}
-
-How do you access the first element of a list?
-
-Assume \texttt{list} is a list:
-
-\begin{enumerate}
-\item \texttt{list[1]}
-\item \texttt{list[0]}
-\item \texttt{list[-1]}
-\item \texttt{list(0)}
-\item \texttt{list(-1)}
-\item \texttt{list(1)}
-\end{enumerate}
-\end{frame}
-
-\begin{frame}
-\frametitle{Lists II}
-
-How do you access the last element of a list?
-
-Assume \texttt{list} is a list:
-
-\begin{enumerate}
-\item \texttt{list[1]}
-\item \texttt{list(-0)}
-\item \texttt{list[-1]}
-\item \texttt{list(-1)}
-\item \texttt{list(1)}
-\item \texttt{list[-0]}
-\end{enumerate}
-\end{frame}
-
-\begin{frame}
-{}
-
-\bigskip
-\bigskip
-\bigskip
-Exercises
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Object Identity}
-
-What is the difference between the following two code examples:
-
-A)
-\begin{python}
-A = [1, 2, 3]
-B = [1, 2, 3]
-\end{python}
-
-B)
-
-\begin{python}
-A = [1, 2, 3]
-B = A
-\end{python}
-
-Write a small piece of code (should be 2 or 3 lines) that behaves differently
-if you insert it after each of the two segments above.
-
-\pause
-
-\begin{python}
-B[0] = 0
-print A
 \end{python}
 
 \end{frame}
