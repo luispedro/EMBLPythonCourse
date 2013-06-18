@@ -5,3 +5,6 @@ all: $(pdfs)
 
 %.pdf: %.tex headers/slheader.tex
 	./do-slides.sh $<
+
+clean:
+	rm -f $(pdfs)
