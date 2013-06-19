@@ -46,10 +46,10 @@ print x
 \end{python}
 
 \begin{enumerate}
+\item Prints \alert{3}, \alert{4}, \alert{5}
+\item Prints \alert{3}, \alert{4}, \alert{5}, \alert{6}
 \item Prints \alert{4}
 \item Prints \alert{6}
-\item Prints \alert{3}, \alert{4}, \alert{5}, \alert{6}
-\item Prints \alert{3}, \alert{4}, \alert{5}
 \end{enumerate}
 
 \end{frame}
@@ -71,22 +71,22 @@ else:
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{How Many Above 35?}
+\frametitle{How Many Above 18?}
 
 \begin{python}
-ages = [10, 54, 23, 90, 23, 35]
+ages = [10, 54, 13, 90, 13, 18]
 \end{python}
 
-How many are above 35?
+How many are above 18?
 
 \pause
 
 \begin{python}
-above35 = 0
+above18 = 0
 for v in ages:
-    if v > 35:
-        above35 += 1
-print above35
+    if v > 18:
+        above18 += 1
+print above18
 \end{python}
 
 \end{frame}
@@ -96,9 +96,9 @@ print above35
 \frametitle{What does this print?}
 
 \begin{python}
-ages = [10, 54, 23, 90, 23, 35]
+ages = [10, 54, 23, 90, 23, 18]
 vi = 0
-while ages[vi] <= 35:
+while ages[vi] <= 18:
     vi += 1
 print vi
 \end{python}
@@ -118,7 +118,7 @@ Prints
 \frametitle{What does this print?}
 
 \begin{python}
-ages = [10, 54, 23, 90, 23, 35]
+ages = [10, 54, 23, 90, 23, 18]
 vi = len(ages) - 1
 while vi >= 0:
     print ages[vi]
@@ -132,7 +132,7 @@ while vi >= 0:
 \frametitle{What happens here?}
 
 \begin{python}
-ages = [10, 54, 23, 90, 23, 35]
+ages = [10, 54, 23, 90, 23, 18]
 vi = 0
 while ages[vi] <= 100:
     vi += 1
